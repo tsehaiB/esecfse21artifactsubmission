@@ -1,6 +1,13 @@
 # Installation instructions
 
-### (Optional but recommended) Prepare a virtual machine with vagrant
+## Obtain the artifact
+
+Download and unzip the artifact:
+
+    wget https://zenodo.org/record/4885001/files/esecfse21artifact.zip
+    unzip esecfse21artifact.zip
+
+## (Optional but recommended) Prepare a virtual machine with vagrant
 
 The artifact has been evaluated on Ubuntu 20.04 and should work on
 Debian-based GNU/Linux distributions.  If using another system or
@@ -13,31 +20,30 @@ be installed by hand on VirtualBox or with any other virtualization
 platform.  This step is not necessary if a native installation with
 the tested version is available.
 
-1. Install vagrant and VirtualBox
+Install vagrant and VirtualBox:
 
-    - Install [VirtualBox](https://www.vagrantup.com/downloads) (tested on v6.1.16)
+- Install [VirtualBox](https://www.vagrantup.com/downloads) (tested on v6.1.16)
 
-    - Install [vagrant](https://www.virtualbox.org/wiki/Downloads) (tested on v2.2.6)
+- Install [vagrant](https://www.virtualbox.org/wiki/Downloads) (tested on v2.2.6)
 
-    (Gotcha: each vagrant version has compatibility with specific VirtualBox versions)
+(Note: each vagrant version has compatibility with only specific
+VirtualBox versions.)
 
-2. Create the virtual machine.
+Create the virtual machine:
 
-        wget https://zenodo.org/record/4885001/files/esecfse21artifact.zip
-        unzip esecfse21artifact.zip
-        cd esecfse21artifact/vagrant/
-        vagrant up
-        
-    This will take a couple of minutes to download and boot the VM
-    image.
+    cd esecfse21artifact/
+    vagrant up
 
-3. Enter the virtual machine
+This will take a couple of minutes to download and boot the VM
+image.
 
-        vagrant ssh
-        
-    The prompt should be `vagrant@ubuntu-groovy:~$ `
+Enter the virtual machine:
 
-### Prepare system dependencies
+    vagrant ssh
+
+The prompt should be `vagrant@ubuntu-groovy:~$ `
+
+## Prepare system dependencies
 
 Assuming an Ubuntu 20.04 (or other Debian-based) installation, the
 following instructions will install dependencies.
@@ -45,7 +51,7 @@ following instructions will install dependencies.
     sudo apt update
     sudo apt install -y python3-pip python3-venv flex bison bc libssl-dev libelf-dev
 
-### Install the kclause/kismet software
+## Install the kclause/kismet software
 
 We will install the software into a python virtual environment.  While
 this is optional, it will ensure isolation from your system python
@@ -54,9 +60,10 @@ installation:
     python3 -m venv kmax_env  # create the environment
     source kmax_env/bin/activate  # enter the environment
 
-From source distributed with the artifact package.  If running
-natively, then replace `/vagrant/kmax` with the path to the artifact
-package.
+Install from the source distributed with the artifact package.  (If
+running natively without the Vagrant virtual machine, then replace
+`/vagrant/kmax` with the path to the artifact package, i.e.,
+`PATH_TO_ARTIFACT/kmax`.)
 
     (cd /vagrant/kmax && python3 setup.py install)
 

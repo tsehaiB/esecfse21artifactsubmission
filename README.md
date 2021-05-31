@@ -13,8 +13,9 @@ found in their corresponding path in [vagrant/kmax/](vagrant/kmax/).
 
 ## Obtaining the artifact
 
-The artifact is archived [here](https://zenodo.org/record/4885001),
-while up-to-date source is also available from the [git
+The artifact can be obtained from its [Zenodo
+archive](https://zenodo.org/record/4885001), while up-to-date source
+is also available from the [git
 repository](https://github.com/paulgazz/kmax).
 
 Please see [INSTALL.md](./INSTALL.md) for detailed installation
