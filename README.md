@@ -6,11 +6,6 @@ Oh, Necip Fazıl Yıldıran, Julian Braha, and Paul Gazzillo to appear at
 the 2021 European Software Engineering Conference and ACM SIGSOFT
 Symposium on the Foundations of Software Engineering (ESEC/FSE).
 
-A snapshot of the complete public repository can be found in the
-[vagrant/kmax/](vagrant/kmax/) folder included in this artifact.  So
-any links to files in https://github.com/paulgazz/kmax can also be
-found in their corresponding path in [vagrant/kmax/](vagrant/kmax/).
-
 ## Obtaining the artifact
 
 The artifact can be obtained from its [Zenodo
