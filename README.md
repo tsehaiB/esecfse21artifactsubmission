@@ -23,7 +23,7 @@ instructions
 
 ## Repeating the experiment
 
-(These instruction assume the installation is already complete, as
+(These instructions assume the installation is already complete, as
 described in [INSTALL.md](./INSTALL.md)).
 
 The full experiment can take about 20 hours on commodity desktop
