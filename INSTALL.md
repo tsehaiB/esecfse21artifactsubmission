@@ -46,10 +46,12 @@ The prompt should be `vagrant@ubuntu-groovy:~$ `
 ## Prepare system dependencies
 
 Assuming an Ubuntu 20.04 (or other Debian-based) installation, the
-following instructions will install dependencies.
+following instructions will install dependencies. For more information on the individual dependencies, click the corresponding hyperlinks. 
 
-    sudo apt update
-    sudo apt install -y python3-pip python3-venv flex bison bc libssl-dev libelf-dev
+<big><pre>
+sudo apt update
+sudo apt install -y [python3-pip](https://www.w3schools.com/python/python_pip.asp) [python3-venv](https://realpython.com/python-virtual-environments-a-primer/) [flex](http://web.mit.edu/gnu/doc/html/flex_1.html#:~:text=flex%20is%20a%20tool%20for,and%20C%20code%2C%20called%20rules%20.) [bison](https://www.gnu.org/software/bison/#:~:text=Bison%20is%20a%20general%2Dpurpose,LALR%20(1)%20parser%20tables.&text=Anyone%20familiar%20with%20Yacc%20should,use%20Bison%20with%20little%20trouble.) [bc](https://linux.die.net/man/1/bc) [libssl-dev](https://cygwin.com/packages/summary/libssl-devel.html) [libelf-dev](https://yum-info.contradodigital.com/view-package/base/elfutils-libelf-devel/)
+</pre></big>
 
 ## Install the kclause/kismet software
 
